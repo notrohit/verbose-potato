@@ -217,16 +217,16 @@ const Footer = () => {
             <p className="text-center text-base text-body-color dark:text-white">
               Teaspares
               <a
-                href="http://uideck.com"
+                href="https://teaspares.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
               >
                 Teaspares
               </a>
-              Teaspares
+              LINKS
               <a
-                href="https://nextjstemplates.com"
+                href="https://teaspares.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
