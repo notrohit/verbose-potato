@@ -5,6 +5,9 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import Hero from "@/components/Hero";
+
+const isComingSoon = true;
 
 const Header = () => {
   // Navbar toggle
@@ -38,7 +41,14 @@ const Header = () => {
 
   const usePathName = usePathname();
 
-  return (
+  return isComingSoon ? (
+    <div style={{ textAlign: "center" }}>
+      <h1 style={{ fontSize: "3rem" }}>Coming Soon...</h1>
+      <div style={{ opacity: 0.25, height: "100vh" }}>
+        <Hero />
+      </div>
+    </div>
+  ) : (
     <>
       <header
         className={`header left-0 top-0 z-40 flex w-full items-center ${

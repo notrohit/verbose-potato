@@ -16,9 +16,12 @@ export const metadata: Metadata = {
   description: "Home for teaspares",
   // other metadata
 };
+const isComingSoon = true;
 
 export default function Home() {
-  return (
+  return isComingSoon ? (
+    <Hero />
+  ) : (
     <>
       <ScrollUp />
       <Hero />
